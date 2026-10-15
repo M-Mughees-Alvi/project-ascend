@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  margin: 0;
+  padding: 24px;
+  background-color: #ffd898;
+  color: #754100;
+  display: flex;
+  justify-content: center;
+}
+.product-buttons {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.product-buttons button {
+  padding: 8px 14px;
+  border: 1px solid #8f6400;
+  background-color: #e5984ff8;
+  color: #724300;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 2px 4px 0 #754100;
+  transition:
+    background-color 0.15s ease,
+    transform 0.08s ease,
+    box-shadow 0.08s ease;
+}
+
+.product-buttons button:hover:not(:disabled) {
+  background-color: #db7f00;
+  border-color: #de7a00;
+}
+.product-buttons button:active:not(:disabled) {
+  transform: translate(1px, 3px);
+  box-shadow: 1px 1px 0 #754100;
+}
+.product-buttons button:disabled {
+  background-color: #754100;
+  color: #fff;
+  cursor: default;
+  transform: translate(1px, 3px);
+  box-shadow: 0 1px 0 #4e2b00;
+}
+.product-container {
+  max-width: 40dvw;
+  background: #eaaf6d;
+  border: 2px solid #754100;
+  color: #4e2b00;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 0 #4e2b00;
+}
+
+.product-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 10px;
+  background-color: #4e2b00;
+}
+
+.product-container h1 {
+  font-size: 1.25rem;
+  margin: 12px 0 8px;
+}
+
+.product-container p {
+  margin: 6px 0;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.product-container small {
+  color: #754100;
+  font-size: 15px;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #fc8b8b;
+  padding: 10px 14px;
+  border-radius: 6px;
+  max-width: 420px;
+}
